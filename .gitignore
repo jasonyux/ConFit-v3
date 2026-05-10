@@ -1,0 +1,50 @@
+dataset/confit_v3_listwise/train_rank.pkl
+dataset/confit_v3_listwise/test_rank.pkl
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Virtual env
+venv/
+.env/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Data / checkpoints（很重要！！！）
+data/
+dataset/
+datasets/
+checkpoints/
+outputs/
+*.pkl
+*.pt
+*.bin
+*.ckpt
+
+# Ray
+/tmp/ray/
+
+# Cache
+.cache/
+*.cache
+
+# HuggingFace / models
+*.safetensors
+*.model
+*.jsonl
+
+# OS
+.DS_Store
+Thumbs.db
