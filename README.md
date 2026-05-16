@@ -235,3 +235,17 @@ python -m reranking_clean.parallel_reranking_universal \
 ```
 
 For Claude-compatible usage, switch `--base-url` and `--model` to the Anthropic-compatible endpoint/model used in your environment.
+
+
+## Citation
+```bash
+@misc{yu2026confitv3improvingresumejob,
+      title={ConFit v3: Improving Resume-Job Matching with LLM-based Re-Ranking}, 
+      author={Xiao Yu and Ruize Xu and Chengyuan Xue and Junyu Chen and Matthew So and Shijun Ma and Bo Liu and Xiangye Liang and Zhou Yu},
+      year={2026},
+      eprint={2605.09760},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2605.09760}, 
+}
+```
