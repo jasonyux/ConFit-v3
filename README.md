@@ -40,7 +40,17 @@ The scripts assume that job text, resume text, label files, and embedding rankin
 - Train ranking pickle: `dataset/confit_v3_listwise/train_rank.pkl`
 - Test ranking pickle: `dataset/confit_v3_listwise/test_rank.pkl`
 
-The ranking pickle should be calculated following the following rank extraction section, the format is like `[{job_id1:{resume_id1:rank_1, resume_id2:rank2,...}, job_id2:...}.` Then, use these ranking files to generate training dataset for RL training. 
+The ranking pickle should be produced as described in the Embedding-Based Rank Extraction section below. Its expected structure is:
+
+```python
+{
+    job_id_1: {resume_id_1: rank_1, resume_id_2: rank_2, ...},
+    job_id_2: {resume_id_1: rank_1, ...},
+    ...
+}
+```
+
+These ranking files are then used to generate the training dataset for RL training.
 
 For rerank RL training, the final parquet files should contain the VERL-style fields:
 
